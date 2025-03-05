@@ -7,6 +7,20 @@
         Console.Write("Введите второе число b: ");
         int b = Convert.ToInt32(Console.ReadLine());
 
+        if (a == b)
+        {
+            Console.WriteLine("=");
+        }
+        else
+            if (a < b)
+        {
+            Console.WriteLine("<");
+        }
+        else if (a > b)
+        {
+            Console.WriteLine(">");
+        }
+
         Console.WriteLine("Нажмите любую клавишу");
         Console.ReadKey();
     }
