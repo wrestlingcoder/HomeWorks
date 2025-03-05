@@ -10,18 +10,18 @@
         int c = Convert.ToInt32(Console.ReadLine());
 
 
-        if (a <= b && b <=c)
+        if (a <= b && c <=b)
+        {
+            Console.WriteLine(b);
+        }
+        else
+            if (b <= c && a <= c)
         {
             Console.WriteLine(c);
         }
         else
-            if (b <= c && c <= a)
         {
             Console.WriteLine(a);
-        }
-        else
-        {
-            Console.WriteLine(b);
         }
 
         Console.WriteLine("Нажмите любую клавишу");
