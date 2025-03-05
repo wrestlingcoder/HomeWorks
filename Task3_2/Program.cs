@@ -6,19 +6,22 @@
         int a = Convert.ToInt32(Console.ReadLine());
         Console.Write("Введите второе число b: ");
         int b = Convert.ToInt32(Console.ReadLine());
+        Console.Write("Введите второе число c: ");
+        int c = Convert.ToInt32(Console.ReadLine());
 
-        if (a == b)
+
+        if (a <= b && b <=c)
         {
-            Console.WriteLine("=");
+            Console.WriteLine(c);
         }
         else
-            if (a < b)
+            if (b <= c && c <= a)
         {
-            Console.WriteLine("<");
+            Console.WriteLine(a);
         }
         else
         {
-            Console.WriteLine(">");
+            Console.WriteLine(b);
         }
 
         Console.WriteLine("Нажмите любую клавишу");
