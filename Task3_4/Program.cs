@@ -24,6 +24,6 @@
         }
 
         Console.WriteLine("Нажмите любую клавишу");
-        Console.ReadKey();
+        Console.ReadKey(); //
     }
 }
