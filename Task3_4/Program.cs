@@ -2,6 +2,8 @@
 {
     private static void Main(string[] args)
     {
+        ////Вводятся три разных числа. Вывести медиану – среднее по величине число.
+
         Console.Write("Введите первое число a: ");
         int a = Convert.ToInt32(Console.ReadLine());
         Console.Write("Введите второе число b: ");
@@ -24,6 +26,6 @@
         }
 
         Console.WriteLine("Нажмите любую клавишу");
-        Console.ReadKey();
+        Console.ReadKey(); //
     }
 }
