@@ -2,6 +2,8 @@
 {
     private static void Main(string[] args)
     {
+        ////Вводятся четыре числа. Вывести большее из них.
+
         Console.Write("Введите первое число a: ");
         int a = Convert.ToInt32(Console.ReadLine());
         Console.Write("Введите второе число b: ");
