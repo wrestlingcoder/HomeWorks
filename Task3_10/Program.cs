@@ -12,7 +12,7 @@
 
         if (10 < n && n < 20)
         {
-            Console.WriteLine($"Мы постоили {n} домов");
+            Console.WriteLine($"Мы построили {n} домов");
         }
         else
         {
@@ -20,13 +20,13 @@
             switch (b)
             {
                 case 1:
-                    Console.WriteLine($"Мы постоили {n} дом");
+                    Console.WriteLine($"Мы построили {n} дом");
                     break;
 
                 case 2:
                 case 3:
                 case 4:
-                    Console.WriteLine($"Мы постоили {n} дома");
+                    Console.WriteLine($"Мы построили {n} дома");
                     break;
                 case 5:
                 case 6:
@@ -34,7 +34,7 @@
                 case 8:
                 case 9:
                 case 0:
-                    Console.WriteLine($"Мы постоили {n} домов");
+                    Console.WriteLine($"Мы построили {n} домов");
                     break;
             }
         }
