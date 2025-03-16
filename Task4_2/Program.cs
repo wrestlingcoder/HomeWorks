@@ -6,12 +6,19 @@
 
         Console.Write("Введите натуральное число n: ");
         double n = Convert.ToDouble(Console.ReadLine());
-        double s = 0;
-
-        for (double i = 1; i <= n; i++)
+        if (n > 9)
         {
-            s += (1/i);
+            Console.WriteLine("Введеное число не натуральное");
         }
-        Console.WriteLine($"1/n! = {s}");
+        else
+        {
+            double s = 0;
+
+            for (double i = 1; i <= n; i++)
+            {
+                s += (1 / i);
+            }
+            Console.WriteLine(s);
+        }
     }
 }

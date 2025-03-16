@@ -6,13 +6,20 @@
 
         Console.Write("Введите натуральное число n: ");
         int n = Convert.ToInt32(Console.ReadLine());
-        int a = 1;
-
-        for (int i = 1; i <= n; i++)
+        if (n > 9)
         {
-            a = a * i;
+            Console.WriteLine("Введеное число не натуральное");
         }
+        else
+        {
+            int a = 1;
 
-        Console.WriteLine($"{n}!={a}");
+            for (int i = 1; i <= n; i++)
+            {
+                a = a * i;
+            }
+
+            Console.WriteLine($"{n}!={a}");
+        }
     }
 }
