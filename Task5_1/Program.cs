@@ -2,24 +2,37 @@
 {
     static void Main(string[] args)
     {
+        //// Сформировать одномерный массив из 10 случайных чисел из диапазона [0, 100]. 
+        //// Определить, каких чисел больше – четных или нечетных
 
         const int n = 10;
-        int[] array = new int[10]; //массив из 10
+        int[] t = new int[n]; //массив из 10 чисел
+        Random rnd = new Random(); //переменная rnd типа рандом
+        int s1 = 0;
+        int s2 = 0;
 
+        foreach (int a in t)
+        {
+            (t[a]) = rnd.Next(0, 101); // перегрузка метода Next
+            Console.Write("{0} ", t[a]); // шаблон "{0} "
 
-
-        ////const int n = 5;
-        ////int[,] t = new int[n, n];
-        ////
-        ////for (int i = 0; i < n; i++)
-        ////{
-        ////    for (int j = 0; j < n; j++)
-        ////    {
-        ////        t[i, j] = i == j ? 1 : 0;
-        ////        Console.Write("{0} ", t[i, j]);
-        ////    }
-        ////    Console.WriteLine();    
-        ////}
-        ////Console.ReadKey();
+            if (t[a] % 2 == 0)
+            {
+                s1 += 1;
+            }
+            else
+            {
+                s2 += 1;
+            }
+        }
+        Console.WriteLine();
+        if (s1 > s2)
+        {
+            Console.WriteLine("Четных чисел больше");
+        }
+        else
+        {
+            Console.WriteLine("Нечетных чисел больше");
+        }
     }
 }
